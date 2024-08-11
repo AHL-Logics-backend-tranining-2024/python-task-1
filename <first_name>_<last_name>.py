@@ -1,4 +1,6 @@
 # <first_name>_<last_name>.py
+# This file is a template and only an example. Please customize as needed.
+
 
 # Step 1: Initialize Book Inventory
 # Initialize a list of books, each represented as a dictionary with title, author, availability, and tags.
