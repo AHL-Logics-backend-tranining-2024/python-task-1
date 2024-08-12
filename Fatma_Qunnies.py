@@ -31,12 +31,8 @@ print(available_books_by_mohammed)
 def matchs(book):
   s = book["tags"][0]
   match s:
-        case "Programming":
-            return "The book \""+ book['title'] +"\"is related to Programming."
-        case "Coding":
-            return "The book \""+ book['title']+"\"is related to Coding."
-        case "Data":
-            return "The book \""+ book['title'] + "\" is related to Data."
+        case "Programming" |"Coding" |"Data":
+            return "The book \""+ book['title'] +"\"is related to "+ book['tags'][0]
         case _:
             return "The book \""+ book['title'] +"\" has an unrecognized tag."
             
