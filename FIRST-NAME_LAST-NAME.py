@@ -1,4 +1,4 @@
-# <first_name>_<last_name>.py
+# FIRST-NAME_LAST-NAME.py
 # This file is a template and only an example. Please customize as needed.
 
 
