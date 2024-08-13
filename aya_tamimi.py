@@ -21,7 +21,7 @@ books = [ {
 # Task one Filter Books by Author and availability
 available_books_by_mohammed = []
 for book in books:
-        if book['author'] == "Mohammed" and book['availability'] == True :
+        if "Mohammed" in book['author'] and book['availability'] == True :
               available_books_by_mohammed.append(book['title'])
       
 print("the available books by mohammed are : ", available_books_by_mohammed)
@@ -31,8 +31,11 @@ print("the available books by mohammed are : ", available_books_by_mohammed)
 for book in books:
      match book['tags'][0]:
            case "Programming":
-                 print("The book " + book['title'] +"is related to Programming")
+                 print("The book " + book['title'] +" is related to Programming")
            case "Coding":
-                 print("The book " + book['title'] +"is related to Coding")
+                 print("The book " + book['title'] +" is related to Coding")
            case "Data":
-                 print("The book " + book['title'] +"is related to Data")
+                 print("The book " + book['title'] +" is related to Data")
+           case _:
+                 print("The book " + book['title'] + " has unrecognized tag")
+   
