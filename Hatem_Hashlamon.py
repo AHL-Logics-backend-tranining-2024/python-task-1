@@ -25,6 +25,14 @@ books = [
 # Create a new list with titles of books where the author's name includes "Mohammed" and availability is True.
 # available_books_by_mohammed = [ ... ]
 
+available_books_by_mohammed = []
+for book in books :
+    if "Mohammed" in book["Author"] and book["Availability"] == True :
+        available_books_by_mohammed.append(book["Title"])
+
+print(available_books_by_mohammed)
+             
+
 
 # Step 3: Analyze Tags with Match Statement
 # For each book, use a match statement to check the first tag and print relevant messages.
