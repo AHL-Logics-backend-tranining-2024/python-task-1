@@ -13,6 +13,10 @@
 
 # Step 3: Analyze Tags with Match Statement
 # For each book, use a match statement to check the first tag and print relevant messages.
+# This file is a template and only an example. Please customize as needed.
+
+
+# Step 1: Initialize Book Inventory
 
 books = [
     {"Title": "Python Fundamentals", "Author": "Ahmed Zayed", "Availability": True, "Tags": ["Programming", "Python", "Basics"]},
@@ -37,7 +41,7 @@ for book in books:
             print(f'The book "{book["Title"]}" is related to coding.')
         case "Data":
             print(f'The book "{book["Title"]}" is related to data.')
-            
+
 
 
 
