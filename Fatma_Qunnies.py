@@ -28,15 +28,16 @@ print(available_books_by_mohammed)
 
 # Step 3: Analyze Tags with Match Statement
 
-def matchs(book):
+#def matchs(book):
+for book in books :
   s = book["tags"][0]
   match s:
         case "Programming" |"Coding" |"Data":
-            return "The book \""+ book['title'] +"\"is related to "+ book['tags'][0]
+            print( "The book \""+ book['title'] +"\"is related to "+ book['tags'][0])
         case _:
-            return "The book \""+ book['title'] +"\" has an unrecognized tag."
+             print( "The book \""+ book['title'] +"\" has an unrecognized tag.")
             
    
 
-for book in books :
-   print (matchs(book))
+
+#    print (matchs(book))
