@@ -37,6 +37,7 @@ for book in books:
             print(f'The book "{book["Title"]}" is related to coding.')
         case "Data":
             print(f'The book "{book["Title"]}" is related to data.')
+            
 
 
 
