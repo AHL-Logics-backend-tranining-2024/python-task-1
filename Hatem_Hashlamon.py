@@ -1,9 +1,24 @@
-# FIRST-NAME_LAST-NAME.py
-# This file is a template and only an example. Please customize as needed.
 
-
-# Step 1: Initialize Book Inventory
-# Initialize a list of books, each represented as a dictionary with title, author, availability, and tags.
+books = [
+    {
+        "Title": "Python Fundamentals", 
+        "Author": "Ahmed Zayed",
+        "Availability": True,
+        "Tags": ["Programming", "Python", "Basics"]
+    },
+    {
+        "Title": "The Art of Coding",
+        "Author": "Mohammed Ali",
+        "Availability": False, 
+        "Tags": ["Coding", "Art", "Creativity"]
+    },
+    {
+        "Title": "Data Structures in Python",
+        "Author": "Yousef Amr",
+        "Availability": True,
+        "Tags": ["Data", "Python", "Intermediate"]
+    }
+]
 
 
 # Step 2: Filter Books by Author and Availability
