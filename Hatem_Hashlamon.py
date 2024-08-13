@@ -26,7 +26,7 @@ books = [
 # available_books_by_mohammed = [ ... ]
 
 available_books_by_mohammed = []
-for book in books :
+for book in books:
     if "Mohammed" in book["Author"] and book["Availability"] == True :
         available_books_by_mohammed.append(book["Title"])
 
@@ -36,4 +36,13 @@ print(available_books_by_mohammed)
 
 # Step 3: Analyze Tags with Match Statement
 # For each book, use a match statement to check the first tag and print relevant messages.
+for book in books:
+    match book["Tags"][0]:
+        case "Programming" | "Coding" | "Data":
+            print(f'The book "{book["Title"]}" is related to {book["Tags"][0]}.')
+        case _:
+            print("The tag is unrecognized")
+
+            
+
 
