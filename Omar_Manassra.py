@@ -23,7 +23,9 @@ books = [
     {"Title": "The Art of Coding", "Author": "Mohammed Ali", "Availability": False, "Tags": ["Coding", "Art", "Creativity"]},
     {"Title": "Data Structures in Python", "Author": "Yousef Amr", "Availability": True, "Tags": ["Data", "Python", "Intermediate"]}
 ]
-
+# Step 2: Filter Books by Author and Availability
+# Create a new list with titles of books where the author's name includes "Mohammed" and availability is True.
+# available_books_by_mohammed = [ ... ]
 available_books_by_mohammed = []
 
 for book in books:
@@ -32,7 +34,9 @@ for book in books:
 
 print(type(available_books_by_mohammed))
 print(available_books_by_mohammed)
-
+# Step 3: Analyze Tags with Match Statement
+# For each book, use a match statement to check the first tag and print relevant messages.
+# This file is a template and only an example. Please customize as needed.
 for book in books:
     match book["Tags"][0]:
         case "Programming":
