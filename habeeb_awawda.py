@@ -34,7 +34,7 @@ print(available_books_by_mohammed)
 for book in books:
     match book.get('tags')[0]:
         case 'Programming' | 'Coding' | 'Data':
-            print(book.get('title')+', '+'which has been written by '+book.get('author'))
+            print( "The book "+ book['title'] +" is related to "+ book['tags'][0])
         case _:
             print(book.get('title')+', this tag is unrecognized')
 
